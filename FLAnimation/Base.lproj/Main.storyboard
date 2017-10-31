@@ -17,25 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-eX-wFX" customClass="AnimationButton">
-                                <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1P-hQ-Oed">
+                                <rect key="frame" x="77.5" y="303.5" width="220" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aek-nz-dh1" customClass="AnimationView">
+                                        <rect key="frame" x="160" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-eX-wFX" customClass="AnimationButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="6UI-Vy-ntw"/>
+                                            <constraint firstAttribute="height" constant="60" id="lCc-rj-dMh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="6UI-Vy-ntw"/>
-                                    <constraint firstAttribute="height" constant="60" id="lCc-rj-dMh"/>
+                                    <constraint firstItem="aek-nz-dh1" firstAttribute="leading" secondItem="Y4r-eX-wFX" secondAttribute="trailing" constant="100" id="1FQ-yI-HXq"/>
+                                    <constraint firstItem="aek-nz-dh1" firstAttribute="width" secondItem="Y4r-eX-wFX" secondAttribute="width" id="5zF-2c-3fv"/>
+                                    <constraint firstAttribute="trailing" secondItem="aek-nz-dh1" secondAttribute="trailing" id="P8u-xg-iqf"/>
+                                    <constraint firstItem="aek-nz-dh1" firstAttribute="centerY" secondItem="g1P-hQ-Oed" secondAttribute="centerY" id="UsU-JQ-itG"/>
+                                    <constraint firstItem="aek-nz-dh1" firstAttribute="height" secondItem="Y4r-eX-wFX" secondAttribute="height" id="WLU-S2-dDU"/>
+                                    <constraint firstItem="Y4r-eX-wFX" firstAttribute="top" secondItem="g1P-hQ-Oed" secondAttribute="top" id="b0d-mI-xhw"/>
+                                    <constraint firstItem="Y4r-eX-wFX" firstAttribute="leading" secondItem="g1P-hQ-Oed" secondAttribute="leading" id="dxi-21-xyO"/>
+                                    <constraint firstItem="Y4r-eX-wFX" firstAttribute="centerY" secondItem="g1P-hQ-Oed" secondAttribute="centerY" id="wJr-Uz-qKy"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Y4r-eX-wFX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="33j-R9-0rs"/>
-                            <constraint firstItem="Y4r-eX-wFX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cmW-fj-LJk"/>
+                            <constraint firstItem="g1P-hQ-Oed" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FMV-H3-UNU"/>
+                            <constraint firstItem="g1P-hQ-Oed" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vah-gv-jxQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

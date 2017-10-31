@@ -25,8 +25,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)like:(id)sender {
-    
-}
+
 
 @end
